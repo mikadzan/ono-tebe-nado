@@ -21,7 +21,7 @@
 }
 
 .header__links-list {    
-    font-family: "Raleway";
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     width: 391.48px;
     font-size: 18px;
     display: flex;
@@ -47,12 +47,16 @@
    
 }
 
-.header__address{
-    justify-self: end;
+.address {
     width: 241px;
     line-height: 24px;
     font-style: normal;
     font-size: 18px;
+}
+
+
+.header__address{
+    justify-self: end;
 }
 
 
@@ -82,7 +86,7 @@
     font-weight: 700;
     line-height: 100px;
     gap: 20px;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     color: white;  
     letter-spacing: 0.3em;
     text-transform: uppercase;
@@ -142,7 +146,7 @@
 .bet-button {
     cursor: pointer;
     background: transparent;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-size: 22px;
     font-weight: 500;
     line-height: 26px;
@@ -301,13 +305,6 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer__address {
-    width: 241px;
-    line-height: 24px;
-    font-style: normal;
-    font-size: 18px;
-}
-
 .footer__menu {
     text-align: center;
     font-size: 18px;    
@@ -324,11 +321,7 @@
 .footer__social-list-item{
     cursor: pointer;
     width: 48px;
-    height: 48px;
-    gap: 0px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-
+    height: 48px;   
 }
 
 .footer__social-list {
