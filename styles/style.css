@@ -17,7 +17,7 @@
 .header__menu {
     justify-self: start;
     background-color: white;    
-    height: 22px;
+    line-height: 20px;
 }
 
 .header__links-list {    
@@ -34,11 +34,8 @@
 .header__links-list-item_no-bullit {
     list-style: none;
 }
-
-.header__links-list-item {
-    text-decoration: underline;
-   
-    
+.header__link_active{
+    text-decoration: none;
 }
 .header__logo {
     margin: auto;
@@ -60,7 +57,7 @@
 
 
 .cover {
-    height: 757px;
+    min-height: 757px;
     background-image:url(../images/cover.jpg) ;
     background-size: cover;
     background-position: center;
@@ -85,7 +82,7 @@
     font-weight: 700;
     line-height: 100px;
     gap: 20px;
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     color: white;  
     letter-spacing: 0.3em;
     text-transform: uppercase;
@@ -143,6 +140,7 @@
 }
 
 .bet-button {
+    cursor: pointer;
     background: transparent;
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 22px;
@@ -152,7 +150,7 @@
     text-transform: uppercase;
     color: #fff;
     width: 256px;
-    height: 51px;
+    min-height: 51px;
     border: 1px solid #fff;
 }
 
@@ -172,6 +170,7 @@
     
 .lots__card-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     width: 100%;
     list-style: none;
@@ -180,8 +179,11 @@
 }
 
 .lots__card-list-item {
-    flex: 1 1 430px;
+    flex-grow: 1;
+    flex: 1;
     min-height: 450px;
+    background-size: cover;
+    background-position: center;
 }
 .card-link {
     display: block;
@@ -219,22 +221,14 @@
 .card_type_film {
     
     background-image: url(../images/card-lot-01.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .card_type_book {
-    
-    
     background-image: url(../images/card-lot-02.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .lots__look-more-link {
@@ -307,7 +301,7 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.address {
+.footer__address {
     width: 241px;
     line-height: 24px;
     font-style: normal;
@@ -325,6 +319,16 @@
 
 .footer__menu-link_active {
     text-decoration: none;
+}
+
+.footer__social-list-item{
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
 }
 
 .footer__social-list {
